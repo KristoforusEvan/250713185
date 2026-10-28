@@ -1,0 +1,170 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #d8dce1; 
+    color: #2b2d42;
+    margin: 0;
+    padding: 40px 0;
+}
+
+
+#wadah {
+    width: 680px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 2px solid #a0aab5; 
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+
+.header-form {
+    background-color: #c9dedd; 
+    padding: 25px 20px 20px 20px;
+    border-bottom: 2px solid #8abdbb;
+    text-align: center;
+}
+
+.header-form h1 {
+    color: #0b3945;
+    font-size: 22px;
+    margin: 0 0 8px 0;
+}
+
+.header-form p.pengantar {
+    font-size: 13px;
+    color: #2b4566;
+    margin: 0;
+    line-height: 1.4em;
+}
+
+
+form {
+    padding: 20px 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px 12px;
+    vertical-align: middle;
+    border-bottom: 1px solid #d0d7de; 
+}
+
+td.atas {
+    vertical-align: top;
+    padding-top: 12px;
+}
+
+
+.kolom-label {
+    width: 36%;
+    font-weight: bold;
+    font-size: 13px;
+    color: #1a2332;
+}
+
+.kolom-isian {
+    width: 64%;
+}
+
+tr.baris-selang {
+    background-color: #e5e9ee; 
+}
+
+tr.area-unggah td {
+    background-color: #dbe3ed; 
+    border-top: 1px dashed #9aaec4;
+    border-bottom: 1px dashed #9aaec4;
+}
+
+.catatan {
+    font-size: 11px;
+    color: #555e68;
+    font-weight: normal;
+}
+
+.judul-grup {
+    display: block;
+}
+
+.grup-pilihan {
+    margin: 3px 0;
+    font-size: 13px;
+}
+
+.grup-pilihan label {
+    margin-right: 12px;
+}
+
+input[type="text"],
+select,
+textarea {
+    font-family: inherit;
+    font-size: 13px;
+    padding: 7px 10px;
+    border: 1px solid #a5b0bc; 
+    background-color: #ffffff;
+}
+
+input[type="text"] {
+    width: 88%;
+}
+
+select {
+    width: 48%;
+}
+
+textarea {
+    width: 92%;
+    resize: vertical;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #0f4c5c;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.baris-tombol {
+    text-align: center;
+    background-color: #d8dce1; 
+    padding: 18px 0 !important;
+}
+
+input[type="submit"] {
+    font-family: inherit;
+    background-color: #0f4c5c;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 10px 28px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0b3844;
+}
+
+
+input::placeholder,
+textarea::placeholder {
+    color: #7a8694;
+    font-style: italic;
+    font-size: 12px;
+    opacity: 1;
+    transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder,
+input:focus::placeholder,
+textarea:focus::placeholder {
+    color: transparent;
+    opacity: 0;
+}

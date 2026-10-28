@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Form Registrasi Tim Kompetisi</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+</head>
+<body>
+    <div id="wadah">
+        <div class="header-form">
+            <h1>Registrasi Tim Peserta Kompetisi</h1>
+        </div>
+
+        <form action="" method="post" enctype="multipart/form-data">
+            <table cellspacing="0" cellpadding="0">
+                <tr>
+                    <td class="kolom-label">
+                        <label for="namatim">Nama Kelompok / Tim</label>
+                    </td>
+                    <td class="kolom-isian">
+                        <input type="text" id="namatim" name="namatim" size="30" placeholder="Klik di sini untuk menulis..." />
+                    </td>
+                </tr>
+                <tr class="baris-selang">
+                    <td class="kolom-label">
+                        <label for="ketua">Nama Ketua Tim</label>
+                    </td>
+                    <td class="kolom-isian">
+                        <input type="text" id="ketua" name="ketua" size="30" placeholder="Klik di sini untuk menulis..." />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="kolom-label">
+                        <label for="jumlah">Jumlah Anggota Tim</label>
+                    </td>
+                    <td class="kolom-isian">
+                        <select name="jumlah" id="jumlah">
+                            <option>1 orang</option>
+                            <option>2 orang</option>
+                            <option>3 orang</option>
+                            <option>4 orang</option>
+                            <option>5 orang</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="baris-selang">
+                    <td class="kolom-label">
+                        <label for="telepon">Nomor WhatsApp / Kontak </label>
+                    </td>
+                    <td class="kolom-isian">
+                        <input type="text" id="telepon" name="telepon" size="30" placeholder="Klik di sini untuk menulis..." />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="kolom-label">
+                        <label for="universitas">Asal Perguruan Tinggi / Instansi</label>
+                    </td>
+                    <td class="kolom-isian">
+                        <input type="text" id="universitas" name="universitas" size="30" placeholder="Klik di sini untuk menulis..." />
+                    </td>
+                </tr>
+                <tr class="baris-selang">
+                    <td class="kolom-label atas">
+                        <span class="judul-grup">Bidang Lomba</span>
+                    </td>
+                    <td class="kolom-isian">
+                        <p class="grup-pilihan">
+                            <input type="checkbox" id="coding" name="bidang" value="Coding" />
+                            <label for="coding">Coding</label>
+                            <input type="checkbox" id="desain" name="bidang" value="Desain" />
+                            <label for="desain">Desain UI/UX</label>
+                        </p>
+                        <p class="grup-pilihan">
+                            <input type="checkbox" id="video" name="bidang" value="Video" />
+                            <label for="video">Sinematografi / Video</label>
+                            <input type="checkbox" id="essay" name="bidang" value="Essay" />
+                            <label for="essay">Karya Tulis / Essay</label>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="kolom-label">
+                        <span class="judul-grup">Kategori Peserta</span>
+                    </td>
+                    <td class="kolom-isian">
+                        <p class="grup-pilihan">
+                            <input type="radio" id="mahasiswa" name="peserta" value="Mahasiswa" />
+                            <label for="mahasiswa">Mahasiswa Aktif</label>
+                            <input type="radio" id="umum" name="peserta" value="Umum" />
+                            <label for="umum">Kategori Umum</label>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="baris-selang">
+                    <td class="kolom-label atas">
+                        <label for="deskripsi">Deskripsi Ringkas Karya</label>
+                    </td>
+                    <td class="kolom-isian">
+                        <textarea id="deskripsi" name="deskripsi" rows="7" cols="30" placeholder="Klik di sini untuk menulis..."></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="kolom-label atas">
+                        <label for="alasan">Motivasi Keikutsertaan</label>
+                    </td>
+                    <td class="kolom-isian">
+                        <textarea name="alasan" id="alasan" rows="5" cols="30" placeholder="Klik di sini untuk menulis..."></textarea>
+                    </td>
+                </tr>
+
+                <tr class="area-unggah">
+                    <td class="kolom-label">
+                        <label for="filekarya">Unggah Berkas Karya</label>
+                    </td>
+                    <td class="kolom-isian">
+                        <input type="file" id="filekarya" name="filekarya" accept="application/pdf, image/jpeg, image/png" />
+                        <br />
+                        <span class="catatan">Format dokumen: PDF, JPG, atau PNG (Maks. 5MB)</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="baris-tombol">
+                        <input type="submit" name="daftar" value="Submit Registrasi" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

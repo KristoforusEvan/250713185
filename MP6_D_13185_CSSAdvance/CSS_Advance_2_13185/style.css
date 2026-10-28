@@ -1,0 +1,208 @@
+
+body {
+    font: 14px/1.6 Arial, Helvetica, sans-serif;
+    background-color: #000000;
+    color: #d4d4d4;
+    margin: 0;
+    padding: 40px 15px;
+}
+
+
+#wadah {
+    max-width: 680px;
+    margin: 0 auto;
+    background-color: #0a0a0a;
+    border: 1px solid #2a2a2a;
+    border-top: 4px solid #fbbf24;
+}
+
+.header-kegiatan {
+    padding: 26px 20px;
+    text-align: center;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.header-kegiatan h1 {
+    color: #fbbf24;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 6px;
+    margin: 0;
+}
+
+h3.sub-judul {
+    color: #fbbf24;
+    font-size: 16px;
+    font-weight: bold;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    margin: 28px 0 10px 0;
+    padding: 0 0 8px 0;
+    border-bottom: 1px solid #fbbf24;
+}
+
+form {
+    padding: 0 24px 24px 24px;
+}
+
+table.tabel-kegiatan {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #1f1f1f;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #d4d4d4;
+}
+
+td.atas {
+    vertical-align: top;
+    padding-top: 14px;
+}
+
+.kolom-label {
+    width: 35%;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+}
+
+.kolom-isian {
+    width: 65%;
+}
+
+tr.baris-selang td {
+    background-color: #111111;
+}
+
+table.tabel-kegiatan tr:hover td {
+    background-color: #1a1a1a;
+}
+
+tr.area-unggah td {
+    border-top: 1px dashed #fbbf24;
+    border-bottom: 1px dashed #fbbf24;
+}
+
+.grup-pilihan {
+    margin: 4px 0;
+    font-size: 14px;
+}
+
+.grup-pilihan label {
+    margin-right: 16px;
+    color: #e5e5e5;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #fbbf24;
+}
+
+input[type="text"],
+select,
+textarea {
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 9px 11px;
+    border: 1px solid #525252;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+input[type="text"] {
+    width: 100%;
+}
+
+select {
+    width: 60%;
+}
+
+textarea {
+    width: 100%;
+    line-height: 1.5;
+    resize: vertical;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #fbbf24;
+    outline: 2px solid rgba(251, 191, 36, 0.3);
+    outline-offset: 0;
+}
+
+input[type="file"] {
+    color: #d4d4d4;
+    font-family: inherit;
+    font-size: 13px;
+}
+
+td.baris-tombol {
+    text-align: center;
+    background-color: #0a0a0a !important;
+    border-bottom: none;
+    padding: 20px 0 6px 0;
+}
+
+input[type="submit"] {
+    font-family: inherit;
+    background-color: #fbbf24;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 11px 34px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #fde68a;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #8a8a8a;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+    opacity: 0;
+}
+
+@media (max-width: 520px) {
+    form {
+        padding: 0 12px 16px 12px;
+    }
+
+    td.kolom-label,
+    td.kolom-isian {
+        display: block;
+        width: auto;
+    }
+
+    td.kolom-label {
+        border-bottom: none;
+        padding-bottom: 2px;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    .header-kegiatan h1 {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+}
